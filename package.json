@@ -1,0 +1,27 @@
+{
+  "name": "testsketch",
+  "description": "sketch plugin",
+  "version": "3.0.0",
+  "repository": "git@github.com:MattZH/sketch-plugin.git",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "testSketch",
+    "manifest": "src/manifest.json",
+    "main": "testsketch.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.0"
+  }
+}
