@@ -1,7 +1,7 @@
 {
   "name": "testsketch",
   "description": "sketch plugin",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "repository": "git@github.com:MattZH/sketch-plugin.git",
   "engines": {
     "sketch": ">=49.0"
